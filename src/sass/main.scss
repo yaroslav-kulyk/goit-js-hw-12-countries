@@ -1,17 +1,8 @@
-/*
- * Главный файл стилей.
- * Все паршалы подключаются сюда.
- */
-
-// Стили для файла с примером HTML-фрагмента
-// @import './example';
-
 .container {
   margin-left: auto;
   margin-right: auto;
 
   max-width: 400px;
-  text-align: center;
 }
 
 h1 {
@@ -21,11 +12,11 @@ h1 {
 .search-form {
   display: flex;
   flex-direction: column;
+  margin-bottom: 32px;
 }
 
 input {
   height: 30px;
-  //   max-width: 300px;
 }
 
 #q-string {
@@ -39,4 +30,21 @@ ul {
 
 .cc-det {
   list-style: none;
+}
+
+.bold {
+  font-weight: bold;
+}
+
+span {
+  font-weight: normal;
+}
+
+.general {
+  display: flex;
+}
+
+img {
+  display: block;
+  margin-right: 40px;
 }

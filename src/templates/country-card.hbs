@@ -1,16 +1,18 @@
 {{#each this}}
-  <img src='{{flag}}' alt='Country Flag' width='64px' />
+  <div class="general">
+    <img src='{{flag}}' alt='Country Flag' width='64px' />
+    <h2>{{name}}</h2>
+  </div>
   
-  <h2>{{name}}</h2>
-  <p>Capital: {{capital}}</p>
-  <p>Population: {{population}}</p>
-  <p>Languages:</p>
+  <p class="bold">Capital: <span>{{capital}}</span></p>
+  <p class="bold">Population: <span>{{population}}</span></p>
+  <p class="bold">Languages:</p>
   <ul class='cc-det'>
     {{#each languages}}
       <li>{{name}}</li>
     {{/each}}
   </ul>
-  <p>Currencies:</p>
+  <p class="bold">Currencies:</p>
   <ul class='cc-det'>
     {{#each currencies}}
       <li>{{symbol}} - {{name}} ({{code}})</li>
